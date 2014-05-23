@@ -1,0 +1,36 @@
+/* LOGIN */
+
+html { background: transparent !important}
+
+body{
+	background: #F2F3FD url('../img/noise-texture.png') !important;
+}
+
+.login_wrap{
+	margin-top: 8%;
+}
+
+.heading_blue{
+	color: #FFFFFF  !important;
+	background-color: #357ca5 !important;
+	border-color: #bce8f1 !important;
+	text-align: center !important;
+	padding: 1.1em;
+}
+
+.panel-body .alert{
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+	text-align: center;
+	padding: 0.6em;
+}
+
+.panel-body .field_error, #email_message{
+	color: #a94442;
+}
+
+/* ADD USER */
+
+.row > .col-xs-6, .row > .col-md-6 {
+	margin-bottom: 1em !important;
+}
