@@ -70,11 +70,11 @@
                                     ?>
                                     <li <?=$classActive?>>
                                         <a href="<?=base_url()?>admin/index">
-                                            <i class="fa fa-upload"></i> <span>Inicio</span>
+                                            <i class="fa fa-bars"></i> <span>Inicio</span>
                                         </a>
                                     </li>
                                      <?php 
-                                        if((strpos($this->uri->uri_string(),'companies/debtor')) !== FALSE || (strpos($this->uri->uri_string(),'letters/add')) !== FALSE || (strpos($this->uri->uri_string(),'letters/preview')) !== FALSE || (strpos($this->uri->uri_string(),'letters/edit')) !== FALSE || (strpos($this->uri->uri_string(),'emails/preview')) !== FALSE || (strpos($this->uri->uri_string(),'emails/edit')) !== FALSE){ 
+                                        if((strpos($this->uri->uri_string(),'courses/add')) !== FALSE || (strpos($this->uri->uri_string(),'courses/current')) !== FALSE || (strpos($this->uri->uri_string(),'courses/previous')) !== FALSE || (strpos($this->uri->uri_string(),'courses/show')) !== FALSE || (strpos($this->uri->uri_string(),'students/add')) !== FALSE || (strpos($this->uri->uri_string(),'courses/edit_calification')) !== FALSE){ 
                                             $classActive = ' active';
                                         }else{
                                             $classActive = '';
@@ -82,13 +82,14 @@
                                     ?>
                                     <li class="treeview <?=$classActive?>">
                                         <a href="#">
-                                            <i class="fa fa-envelope"></i> <span>Cursos</span>
+                                            <i class="fa fa-book"></i> <span>Cursos</span>
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </a>
                                         <ul class="treeview-menu">
-                                            <li><a href="<?=base_url()?>companies/debtor"><i class="fa fa-angle-double-right"></i>Deudores</a></li>
-                                            <!-- <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced Elements</a></li> -->
-                                            <!-- <li><a href="pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>                                 -->
+                                            <li><a href="<?=base_url()?>courses/add"><i class="fa fa-angle-double-right"></i>Agregar</a></li>
+                                            <li><a href="<?=base_url()?>courses/current"><i class="fa fa-angle-double-right"></i>Actuales</a></li>
+                                            <li><a href="<?=base_url()?>courses/previous"><i class="fa fa-angle-double-right"></i>Anteriores</a></li>
+                                            <li><a href="<?=base_url()?>courses/future"><i class="fa fa-angle-double-right"></i>Futuros</a></li>
                                         </ul>
                                     </li>
                                      <?php 
@@ -176,20 +177,20 @@
                             <section class="content-header">
                                 <h1>
                                     <?php 
-                                        if((strpos($this->uri->uri_string(),'users/profile')) !== FALSE){ 
-                                            echo 'Importar archivo'; 
-                                     }elseif ((strpos($this->uri->uri_string(),'companies/debtor')) !== FALSE) {
-                                            echo 'Deudores';
-                                     }elseif ((strpos($this->uri->uri_string(),'letters/add')) !== FALSE) {
-                                            echo 'Previsualización carta';
-                                     }elseif ((strpos($this->uri->uri_string(),'users/add')) !== FALSE) {
-                                            echo 'Crear cuenta';
-                                     }elseif ((strpos($this->uri->uri_string(),'users/approved')) !== FALSE) {
-                                            echo 'Usuarios aprobados';
-                                     }elseif ((strpos($this->uri->uri_string(),'users/pending')) !== FALSE) {
-                                            echo 'Usuarios pendientes';
-                                     }elseif ((strpos($this->uri->uri_string(),'users/locked')) !== FALSE) {
-                                            echo 'Usuarios bloqueados';
+                                        if((strpos($this->uri->uri_string(),'admin/index')) !== FALSE){ 
+                                            echo 'Inicio'; 
+                                     }elseif ((strpos($this->uri->uri_string(),'courses/current')) !== FALSE) {
+                                            echo 'Cursos actuales';
+                                     }elseif ((strpos($this->uri->uri_string(),'courses/add')) !== FALSE) {
+                                            echo 'Agregar curso';
+                                     }elseif ((strpos($this->uri->uri_string(),'courses/previous')) !== FALSE) {
+                                            echo 'Cursos anteriores';
+                                     }elseif ((strpos($this->uri->uri_string(),'courses/show')) !== FALSE) {
+                                            echo 'Curso 1';
+                                     }elseif ((strpos($this->uri->uri_string(),'students/add')) !== FALSE) {
+                                            echo 'Curso 1';
+                                     }elseif ((strpos($this->uri->uri_string(),'courses/edit_calification')) !== FALSE) {
+                                            echo 'Ingresar calificaciones';
                                      }elseif ((strpos($this->uri->uri_string(),'letters/preview')) !== FALSE) {
                                             echo 'Ver documento';
                                      }elseif ((strpos($this->uri->uri_string(),'letters/edit')) !== FALSE) {

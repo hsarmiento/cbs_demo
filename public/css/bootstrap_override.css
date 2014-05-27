@@ -2,3 +2,8 @@
 	color: white;
 	padding-left: 0.5em;
 }
+
+.form_wrap_title{
+	background: #428bca;
+	color: #fff !important;
+}
