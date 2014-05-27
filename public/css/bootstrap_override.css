@@ -7,3 +7,12 @@
 	background: #428bca;
 	color: #fff !important;
 }
+
+.calendar td:hover{
+	background: #d0e9c6;
+}
+
+.calendar td{
+	width: 10em;
+	height: 5em;
+}

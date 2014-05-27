@@ -13,7 +13,11 @@
 		</form>
 	</div>
 </div>
-
+<div class="row">
+	<div class="col-lg-10 col-sm-8 col-xs-12 col-md-11">
+		<h4><a href="<?=base_url()?>courses/add_future">Convocar</a><a href="<?=base_url()?>courses/schedule" class="pull-right">Programar cursos</a></h4>
+	</div>
+</div>
 <div class="row">
 	<div class="col-lg-10 col-md-11 col-sm-9 col-xs-12">
 		<div class="panel panel-primary" id="panel_result">
@@ -33,49 +37,49 @@
 							<td>Curso 1</td>
 							<td>Especialidad 1, Especialidad 2</td>
 							<td>20</td>
-							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-pencil-square-o fa-2"></i>actualizar</a></li></ul></td>
+							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-share"></i>enviar convocatoria</a></li></ul></td>
 						</tr>
 						<tr>
 							<td>Curso 2</td>
 							<td>Especialidad 3, Especialidad 4</td>
 							<td>10</td>
-							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-pencil-square-o fa-2"></i>actualizar</a></li></ul></td>
+							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-share"></i>enviar convocatoria</a></li></ul></td>
 						</tr>
 						<tr>
 							<td>Curso 5</td>
 							<td>Especialidad 3, Especialidad 4</td>
 							<td>10</td>
-							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-pencil-square-o fa-2"></i>actualizar</a></li></ul></td>
+							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-share"></i>enviar convocatoria</a></li></ul></td>
 						</tr>
 						<tr>
 							<td>Curso 5</td>
 							<td>Especialidad 3, Especialidad 4</td>
 							<td>10</td>
-							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-pencil-square-o fa-2"></i>actualizar</a></li></ul></td>
+							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-share"></i>enviar convocatoria</a></li></ul></td>
 						</tr>
 						<tr>
 							<td>Curso 5</td>
 							<td>Especialidad 3, Especialidad 4</td>
 							<td>10</td>
-							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-pencil-square-o fa-2"></i>actualizar</a></li></ul></td>
+							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-share"></i>enviar convocatoria</a></li></ul></td>
 						</tr>
 						<tr>
 							<td>Curso 5</td>
 							<td>Especialidad 3, Especialidad 4</td>
 							<td>10</td>
-							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-pencil-square-o fa-2"></i>actualizar</a></li></ul></td>
+							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-share"></i>enviar convocatoria</a></li></ul></td>
 						</tr>
 						<tr>
 							<td>Curso 5</td>
 							<td>Especialidad 3, Especialidad 4</td>
 							<td>10</td>
-							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-pencil-square-o fa-2"></i>actualizar</a></li></ul></td>
+							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-share"></i>enviar convocatoria</a></li></ul></td>
 						</tr>
 						<tr>
 							<td>Curso 5</td>
 							<td>Especialidad 3, Especialidad 4</td>
 							<td>10</td>
-							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-pencil-square-o fa-2"></i>actualizar</a></li></ul></td>
+							<td><ul class="list-inline"><li><a href="<?=base_url()?>courses/show"><i class="fa fa-search fa-2"></i>ver</a></li><li><a href="#"><i class="fa fa-share"></i>enviar convocatoria</a></li></ul></td>
 						</tr>	
 					</tbody>	
 				</table>	

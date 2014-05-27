@@ -74,7 +74,7 @@
                                         </a>
                                     </li>
                                      <?php 
-                                        if((strpos($this->uri->uri_string(),'courses/add')) !== FALSE || (strpos($this->uri->uri_string(),'courses/current')) !== FALSE || (strpos($this->uri->uri_string(),'courses/previous')) !== FALSE || (strpos($this->uri->uri_string(),'courses/show')) !== FALSE || (strpos($this->uri->uri_string(),'students/add')) !== FALSE || (strpos($this->uri->uri_string(),'courses/edit_calification')) !== FALSE){ 
+                                        if((strpos($this->uri->uri_string(),'courses/add')) !== FALSE || (strpos($this->uri->uri_string(),'courses/current')) !== FALSE || (strpos($this->uri->uri_string(),'courses/previous')) !== FALSE || (strpos($this->uri->uri_string(),'courses/show')) !== FALSE || (strpos($this->uri->uri_string(),'students/add')) !== FALSE || (strpos($this->uri->uri_string(),'courses/edit_calification')) !== FALSE || (strpos($this->uri->uri_string(),'courses/future')) !== FALSE || (strpos($this->uri->uri_string(),'courses/schedule')) !== FALSE){ 
                                             $classActive = ' active';
                                         }else{
                                             $classActive = '';
@@ -191,12 +191,12 @@
                                             echo 'Curso 1';
                                      }elseif ((strpos($this->uri->uri_string(),'courses/edit_calification')) !== FALSE) {
                                             echo 'Ingresar calificaciones';
-                                     }elseif ((strpos($this->uri->uri_string(),'letters/preview')) !== FALSE) {
-                                            echo 'Ver documento';
-                                     }elseif ((strpos($this->uri->uri_string(),'letters/edit')) !== FALSE) {
-                                            echo 'Editar documento';
-                                     }elseif ((strpos($this->uri->uri_string(),'emails/preview')) !== FALSE) {
-                                            echo 'Ver email';
+                                     }elseif ((strpos($this->uri->uri_string(),'courses/future')) !== FALSE) {
+                                            echo 'Cursos futuros';
+                                     }elseif ((strpos($this->uri->uri_string(),'courses/add_future')) !== FALSE) {
+                                            echo 'Convocar';
+                                     }elseif ((strpos($this->uri->uri_string(),'courses/schedule')) !== FALSE) {
+                                            echo 'Programar cursos';
                                      }elseif ((strpos($this->uri->uri_string(),'emails/edit')) !== FALSE) {
                                             echo 'Editar email';
                                      }elseif ((strpos($this->uri->uri_string(),'users/edit')) !== FALSE) {
