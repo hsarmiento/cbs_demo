@@ -22,7 +22,7 @@
         <header> 
              <a href="<?=base_url()?>users/profile" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                <img src="<?=base_url()?>public/img/bomberos_logo.png">
+                <img src="<?=base_url()?>public/img/bomberos_logo.png">Compañia de Bomberos de Santiago
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -93,7 +93,7 @@
                                         </ul>
                                     </li>
                                      <?php 
-                                        if((strpos($this->uri->uri_string(),'invoices/add')) !== FALSE || (strpos($this->uri->uri_string(),'invoices')) !== FALSE){ 
+                                        if((strpos($this->uri->uri_string(),'instructors/add')) !== FALSE || (strpos($this->uri->uri_string(),'instructors')) !== FALSE){ 
                                             $classActive = ' active';
                                         }else{
                                             $classActive = '';
@@ -101,14 +101,14 @@
                                     ?>
                                     <li class="treeview <?=$classActive?>" >
                                         <a href="#">
-                                            <i class="fa fa-paste"></i>
+                                            <i class="fa fa-info"></i>
                                             <span>Instructores</span>
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </a>
                                         <ul class="treeview-menu">
-                                            <li><a href="<?php echo base_url(); ?>invoices/unpaid"><i class="fa fa-angle-double-right"></i> Impagas</a></li>
-                                            <li><a href="<?php echo base_url(); ?>invoices/paid"><i class="fa fa-angle-double-right"></i> Pagadas</a></li>
-                                            <li><a href="<?php echo base_url(); ?>invoices/add"><i class="fa fa-angle-double-right"></i> Agregar</a></li>
+                                            <li><a href="<?php echo base_url(); ?>instructors/add"><i class="fa fa-angle-double-right"></i> Agregar</a></li>
+                                            <li><a href="<?php echo base_url(); ?>instructors/index"><i class="fa fa-angle-double-right"></i> Listado</a></li>
+                                            <!-- <li><a href="<?php echo base_url(); ?>instructor/add"><i class="fa fa-angle-double-right"></i> Agregar</a></li> -->
                                         </ul>
                                     </li>
                                     <?php 
@@ -120,7 +120,7 @@
                                     ?>
                                     <li class="treeview <?=$classActive?>" >
                                         <a href="#">
-                                            <i class="fa fa-paste"></i>
+                                            <i class="fa fa-group"></i>
                                             <span>Voluntarios</span>
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </a>
@@ -138,16 +138,16 @@
                                     ?>
                                     <li class="treeview <?=$classActive?>">
                                         <a href="#">
-                                            <i class="fa fa-suitcase"></i>
+                                            <i class="fa fa-building-o"></i>
                                             <span>Compañias</span>
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </a>
-                                        <ul class="treeview-menu">
+                                       <!--  <ul class="treeview-menu">
                                             <li><a href="<?=base_url()?>companies/add"><i class="fa fa-angle-double-right"></i>Agregar cliente</a></li>
                                             <li><a href="<?=base_url()?>companies/index"><i class="fa fa-angle-double-right"></i>Listado de clientes</a></li>
                                             <li><a href="<?=base_url()?>contacts/add"><i class="fa fa-angle-double-right"></i>Agregar contacto</a></li>
                                             <li><a href="<?=base_url()?>contacts/index"><i class="fa fa-angle-double-right"></i>Listado de contactos</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <?php 
                                         if((strpos($this->uri->uri_string(),'letter_formats/index')) !== FALSE || (strpos($this->uri->uri_string(),'letter_formats/edit')) !== FALSE ){ 
@@ -158,13 +158,13 @@
                                     ?>
                                     <li class="treeview <?=$classActive?>">
                                         <a href="#">
-                                            <i class="fa fa-file-text"></i>
+                                            <i class="fa fa-cogs"></i>
                                             <span>Especialidades</span>
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </a>
-                                        <ul class="treeview-menu">
+                                        <!-- <ul class="treeview-menu">
                                             <li><a href="<?php echo base_url(); ?>letter_formats/index"><i class="fa fa-angle-double-right"></i> Ver</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                 </ul>
                             </section>
@@ -197,10 +197,10 @@
                                             echo 'Convocar';
                                      }elseif ((strpos($this->uri->uri_string(),'courses/schedule')) !== FALSE) {
                                             echo 'Programar cursos';
-                                     }elseif ((strpos($this->uri->uri_string(),'emails/edit')) !== FALSE) {
-                                            echo 'Editar email';
-                                     }elseif ((strpos($this->uri->uri_string(),'users/edit')) !== FALSE) {
-                                            echo 'Editar cuenta';
+                                     }elseif ((strpos($this->uri->uri_string(),'instructors/add')) !== FALSE) {
+                                            echo 'Agregar instructor';
+                                     }elseif ((strpos($this->uri->uri_string(),'instructors/index')) !== FALSE) {
+                                            echo 'Listado de instructores';
                                      }elseif ((strpos($this->uri->uri_string(),'users/account')) !== FALSE) {
                                             echo 'Datos personales';
                                      }elseif ((strpos($this->uri->uri_string(),'invoices/add')) !== FALSE) {

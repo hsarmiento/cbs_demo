@@ -22,7 +22,7 @@
 		<header> 
 			 <a href="<?php echo base_url();?>" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                <img src="<?=base_url()?>public/img/bomberos_logo.png" height="40">
+                <img src="<?=base_url()?>public/img/bomberos_logo.png" height="40">Compañia de Bomberos de Santiago
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">

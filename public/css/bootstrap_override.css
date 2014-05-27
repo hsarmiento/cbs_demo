@@ -16,3 +16,19 @@
 	width: 10em;
 	height: 5em;
 }
+
+.heading_blue{
+	color: #FFFFFF  !important;
+	background-color: #357ca5 !important;
+	border-color: #bce8f1 !important;
+	text-align: center !important;
+	padding: 1.1em;
+}
+
+.row > .col-xs-6, .row > .col-md-6 {
+	margin-bottom: 1em !important;
+}
+
+.logo{
+	font-size: 10px !important;
+}

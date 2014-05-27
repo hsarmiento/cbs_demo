@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-lg-10 col-md-11 col-sm-9 col-xs-12">
 		<div class="panel panel-primary" id="panel_result">
-		  	<div class="panel-heading" id="heading_result">Cursos actuales <a href=""><small>ver más</small></a></div>
+		  	<div class="panel-heading" id="heading_result">Cursos actuales <a href="<?=base_url()?>courses/current"><small>ver más</small></a></div>
 		  	<div class="table-responsive">
 			  	<table class="table table-striped table-hover" id="table_user" name='table_user'>
 					<thead>
@@ -45,7 +45,7 @@
 <div class="row">
 	<div class="col-lg-10 col-md-11 col-sm-9 col-xs-12">
 		<div class="panel panel-primary" id="panel_result">
-		  	<div class="panel-heading" id="heading_result">Cursos actuales <a href=""><small>ver más</small></a></div>
+		  	<div class="panel-heading" id="heading_result">Cursos anteriores <a href="<?=base_url()?>courses/previous"><small>ver más</small></a></div>
 			  	<div class="table-responsive">
 				  	<table class="table table-striped table-hover" id="table_user" name='table_user'>
 						<thead>
